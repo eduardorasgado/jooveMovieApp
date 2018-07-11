@@ -21,7 +21,10 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        
+        <Image 
+          source={require('./assets/logo.png')}
+          style={{width:300, height:90}}
+          />
         <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>Mi primera aplicacion con React Native y Android Studio</Text>
         <Text style={styles.instructions}>{instructions}</Text>
