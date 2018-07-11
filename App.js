@@ -4,9 +4,13 @@
  *Estilos predeterminados para ahorrar tiempo:
 
  http://docs.nativebase.io/Components.html#Components
- 
+
  * @format
  * @flow
+
+ Dato:
+  Ctrl + m para activar el menu en el emulador y activar
+  el modo live reload
  */
 
 import React, {Component} from 'react';
@@ -29,7 +33,7 @@ export default class App extends Component<Props> {
           style={{width:300, height:90}}
           />
         <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>Mi primera aplicacion con React Native y Android Studio</Text>
+        <Text style={styles.instructions}>Mi primera aplicacion con React Native y Android Studio!</Text>
         <Text style={styles.instructions}>{instructions}</Text>
       </View>
     );
@@ -41,7 +45,10 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: Platform.select({
+      ios: '#F5FCFF',
+      android: '#F5FCFF',
+    }),
   },
   welcome: {
     fontSize: 20,
