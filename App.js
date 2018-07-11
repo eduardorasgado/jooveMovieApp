@@ -1,7 +1,10 @@
 /**
  * Sample React Native App
  * https://github.com/facebook/react-native
- *
+ *Estilos predeterminados para ahorrar tiempo:
+
+ http://docs.nativebase.io/Components.html#Components
+ 
  * @format
  * @flow
  */
